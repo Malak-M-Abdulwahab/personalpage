@@ -29,11 +29,10 @@ function NavigationBar() {
         setActiveLink(value)
     }
   return (
-    <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
-        <Container className='container'>
-            <Navbar.Brand href="#home">Welcome,</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
+    <>
+        <Navbar className={scrolled ? "scrolled" : ""}>
+            <Container>
+                <Navbar.Brand href="#home">Welcome,</Navbar.Brand>
                 <Nav className="me-auto">
                     <Nav.Link href="#home" className={activeLink === "home" ? "active navbar-link" : "navbar-link"} onClick={() => updateActiveLink("home")}>Home</Nav.Link>
                     <Nav.Link href="#skills" className={activeLink === "skills" ? "active navbar-link" : "navbar-link"} onClick={() => updateActiveLink("skills")}>Skills</Nav.Link>
@@ -43,15 +42,15 @@ function NavigationBar() {
                 </Nav>
                 <span className="navbar-text">
                     <div className="social-icon">
-                        <a href="https://github.com/Malak-M-Abdulwahab"><img src={github} alt='GitHub'></img></a>
-                        <a href="www.linkedin.com/in/malak-m-abdelwahab"><img src={linkedin} alt='LinkedIn'></img></a>
-                        <a href="https://www.instagram.com/malakk_loki/"><img src={instagram} alt='Instagram'></img></a>
-                        <a href="https://www.facebook.com/profile.php?id=100011692901438"><img src={facebook} alt='FaceBook'></img></a>
+                        <a href="https://github.com/Malak-M-Abdulwahab"><img src={github} alt='GitHub' className='socialLogo'></img></a>
+                        <a href="www.linkedin.com/in/malak-m-abdelwahab"><img src={linkedin} alt='LinkedIn' className='socialLogo'></img></a>
+                        <a href="https://www.instagram.com/malakk_loki/"><img src={instagram} alt='Instagram' className='socialLogo'></img></a>
+                        <a href="https://www.facebook.com/profile.php?id=100011692901438"><img src={facebook} alt='FaceBook' className='socialLogo'></img></a>
                     </div>
                 </span>
-            </Navbar.Collapse>
-        </Container>
-    </Navbar>
+            </Container>
+        </Navbar>
+    </>
   );
 }
 
