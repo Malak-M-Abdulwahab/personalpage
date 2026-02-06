@@ -24,7 +24,7 @@ function Home(){
                 setPeriod(50)
             } else if (isDeleting && updatedText === "") {
                 setIsDeleting(false);
-                setLoopNumber((prev) => prev + 1);
+                setLoopNumber(loopNumber + 1);
                 setPeriod(150)
             }
             return updatedText;
