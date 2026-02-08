@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/personalpage/static/css/main.d1aee1b5.css",
+    "main.js": "/personalpage/static/js/main.19fb991a.js",
+    "static/js/453.cf877522.chunk.js": "/personalpage/static/js/453.cf877522.chunk.js",
+    "static/media/proj1.png": "/personalpage/static/media/proj1.fb0d94c97ff335a55dda.png",
+    "static/media/proj2.png": "/personalpage/static/media/proj2.91030af88fb3f1b896f0.png",
+    "static/media/meBanner.png": "/personalpage/static/media/meBanner.5153b934572a9eb38619.png",
+    "static/media/bannerFlower1.png": "/personalpage/static/media/bannerFlower1.0f132df82c58b982ee71.png",
+    "static/media/call.png": "/personalpage/static/media/call.94b8d815b9a6c85a6f5b.png",
+    "static/media/bannerFlower2.png": "/personalpage/static/media/bannerFlower2.d80ed57d161d6e156b69.png",
+    "static/media/instagram.png": "/personalpage/static/media/instagram.3189e8d2647fbf4bb90d.png",
+    "static/media/html90suffix.png": "/personalpage/static/media/html90suffix.92379f4f9274994deb35.png",
+    "static/media/html92suffix.png": "/personalpage/static/media/html92suffix.d1cbd6afd1a89d2611e8.png",
+    "static/media/html85suffix.png": "/personalpage/static/media/html85suffix.e525b92594901cfd7be9.png",
+    "static/media/html95suffix.png": "/personalpage/static/media/html95suffix.a890f2c91cf4f058081a.png",
+    "static/media/html88suffix.png": "/personalpage/static/media/html88suffix.7cadca1bab4e75162ec4.png",
+    "static/media/html65suffix.png": "/personalpage/static/media/html65suffix.6357ab19b99497912497.png",
+    "static/media/html10suffix.png": "/personalpage/static/media/html10suffix.c8c2497bfc23a71bc607.png",
+    "static/media/github.png": "/personalpage/static/media/github.515e7f099b1fad85dc0f.png",
+    "static/media/linkedin.png": "/personalpage/static/media/linkedin.d1c78fa50b1f5b49aa19.png",
+    "static/media/facebook.png": "/personalpage/static/media/facebook.71e501019c3b83bd5fab.png",
+    "static/media/revicons.eot": "/personalpage/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/personalpage/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/personalpage/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/personalpage/index.html",
+    "main.d1aee1b5.css.map": "/personalpage/static/css/main.d1aee1b5.css.map",
+    "main.19fb991a.js.map": "/personalpage/static/js/main.19fb991a.js.map",
+    "453.cf877522.chunk.js.map": "/personalpage/static/js/453.cf877522.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d1aee1b5.css",
+    "static/js/main.19fb991a.js"
+  ]
+}
