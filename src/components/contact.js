@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import call from "../images/call.png"
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm } from '@formspree/react';
 
 function Contact(){
 
@@ -18,8 +18,6 @@ function Contact(){
     }
 
     const [formDetails , setFormDetails] = useState(formInitialDetails);
-    const [buttonText, setButtonText] = useState('Send');
-    const [status, setStatus] = useState({});
 
     const onFormUpdate = (category, value) => {
         setFormDetails({
@@ -27,36 +25,6 @@ function Contact(){
             [category]: value
         })
     }
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        setButtonText("Sending...");
-
-        try{
-            const response = await fetch("https://formspree.io/f/xpqjzvez", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-                name: formDetails.name,
-                email: formDetails.email,
-                message: formDetails.message
-            }),
-            });
-
-            if (response.ok){
-                setStatus({ success: true, message: "Message sent successfully" });
-            }
-            else{
-                setStatus({ success: false, message: "Something went wrong." });
-            }
-        }
-        catch (err){
-            console.error("Fetch error:", err);
-            setStatus({ success: false, message: "Server unreachable" });
-        }
-
-        setButtonText("Send");
-    };
 
     return (
         <section className="contact" id="contactme">
@@ -83,14 +51,8 @@ function Contact(){
                                 </Col>
                                 <Col>
                                     <textarea rows={6} id="message" name="message" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate("message", e.target.value)}></textarea>
-                                    <button type="submit" disabled={state.submitting}><span>{buttonText}</span></button>
+                                    <button type="submit" disabled={state.submitting}><span>Send</span></button>
                                 </Col>
-                                {
-                                    status.message &&
-                                    <Col>
-                                        <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
-                                    </Col>
-                                }
                             </Row>
                         </form>
                     </Col>
