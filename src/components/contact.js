@@ -8,6 +8,7 @@ import { useForm } from '@formspree/react';
 function Contact(){
 
     const [state, handleSubmit] = useForm("xpqjzvez");
+    const [buttonText, setButtonText] = useState("Send");
 
     const formInitialDetails = {
         firstName: '',
@@ -26,6 +27,14 @@ function Contact(){
         })
     }
 
+    const sent = () => {
+        setButtonText("Sending...")
+        setTimeout(() => {
+            setFormDetails(formInitialDetails)
+            setButtonText("Send")
+        }, 2000);
+    }
+
     return (
         <section className="contact" id="contactme">
             <Container>
@@ -38,20 +47,20 @@ function Contact(){
                         <form onSubmit={handleSubmit}>
                             <Row>
                                 <Col sm={6} className="px-1">
-                                    <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate("firstName", e.target.value)}></input>
+                                    <input type="text" name="firstName" value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate("firstName", e.target.value)}></input>
                                 </Col>
                                 <Col sm={6} className="px-1">
-                                    <input type="text" value={formDetails.lastName} placeholder="Last Name" onChange={(e) => onFormUpdate("lastName", e.target.value)}></input>
+                                    <input type="text" name="lastName" value={formDetails.lastName} placeholder="Last Name" onChange={(e) => onFormUpdate("lastName", e.target.value)}></input>
                                 </Col>
                                 <Col sm={6} className="px-1">
                                     <input type="email" id="email" name="email" value={formDetails.email} placeholder="Email Address" onChange={(e) => onFormUpdate("email", e.target.value)}></input>
                                 </Col>
                                 <Col sm={6} className="px-1">
-                                    <input type="tel" value={formDetails.phone} placeholder="Phone Number" onChange={(e) => onFormUpdate("phone", e.target.value)}></input>
+                                    <input type="tel" name="phone" value={formDetails.phone} placeholder="Phone Number" onChange={(e) => onFormUpdate("phone", e.target.value)}></input>
                                 </Col>
                                 <Col>
                                     <textarea rows={6} id="message" name="message" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate("message", e.target.value)}></textarea>
-                                    <button type="submit" disabled={state.submitting}><span>Send</span></button>
+                                    <button type="submit" disabled={state.submitting} onClick={sent}><span>{buttonText}</span></button>
                                 </Col>
                             </Row>
                         </form>
