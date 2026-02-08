@@ -35,7 +35,7 @@ function Contact(){
             body: JSON.stringify({
                 name: formDetails.name,
                 email: formDetails.email,
-                message: formDetails.message,
+                message: formDetails.message
             }),
             });
 
