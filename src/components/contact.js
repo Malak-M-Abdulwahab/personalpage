@@ -29,24 +29,26 @@ function Contact(){
         setButtonText("Sending...");
 
         try{
-            const response = await fetch("http://localhost:5000/contact", {
+            const response = await fetch("https://formspree.io/f/xpqjzvez", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(formDetails),
+            body: JSON.stringify({
+                name: formDetails.name,
+                email: formDetails.email,
+                message: formDetails.message,
+            }),
             });
 
-            const result = await response.json();
-
-            if (result.code === 200){
-            setStatus({ success: true, message: "Message sent successfully" });
+            if (response.ok){
+                setStatus({ success: true, message: "Message sent successfully" });
             }
             else{
-            setStatus({ success: false, message: "Something went wrong." });
+                setStatus({ success: false, message: "Something went wrong." });
             }
         }
         catch (err){
             console.error("Fetch error:", err);
-            setStatus({ success: false, message: "Server unreachable." });
+            setStatus({ success: false, message: "Server unreachable" });
         }
 
         setButtonText("Send");
