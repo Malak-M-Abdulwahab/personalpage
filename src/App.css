@@ -223,11 +223,12 @@ span.navbar-text {
 
 .skill-bx {
   background: #fffafb;
+  box-shadow: 0 0 5px 5px rgba(225, 196, 207, 0.377);
   border-radius: 64px;
   text-align: center;
   padding: 30px 50px;
   margin: auto;
-  height: 460px;
+  height: 500px;
 }
 
 .skill h2 {
@@ -300,6 +301,7 @@ span.navbar-text {
 
 .project .nav.nav-pills .nav-item {
   width: 50%;
+  /* adjust width according to the number of projects */
 }
 
 .project .nav.nav-pills .nav-link {
@@ -349,6 +351,7 @@ span.navbar-text {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+  box-shadow: 0 0 5px 5px rgba(225, 196, 207, 0.377);
 }
 
 .proj-imgbx::before {
@@ -408,4 +411,38 @@ span.navbar-text {
 
 /* -------------------END PROJECTS--------------------- */
 /* ---------------------------------------------------- */
-/* ---------------------PROJECTS----------------------- */
+/* ---------------------ABOUT ME----------------------- */
+
+.aboutme{
+  width: 60%;
+  margin: auto;
+  background-color: white;
+  border-radius: 25px;
+  padding: 30px 80px;
+  box-shadow: 0 0 5px 5px rgba(225, 196, 207, 0.377);
+}
+
+.aboutme h2{
+	font-size: 45px;
+	font-weight: 700;
+  text-align: center;
+  color: rgb(118, 12, 52);
+  margin: 15px 0;
+}
+
+.aboutme img{
+  width: 250px;
+  border-radius: 125px;
+  border: rgb(255, 230, 236) 5px solid;
+  display: block;
+  margin: 15px auto;
+}
+
+.aboutme p {
+  color: #000000;
+  font-size: 19px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 15px auto 30px auto;
+  text-align: center;
+}

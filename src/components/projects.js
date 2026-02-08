@@ -22,6 +22,7 @@ function Projects(){
             siteURL: "https://malak-m-abdulwahab.github.io/webProject2/Main-Page.html"
         }
     ]
+    // add new projects here:
 
     return(
         <section className="project" id="projects">
@@ -48,6 +49,7 @@ function Projects(){
                                 <Tab.Pane eventKey="second" className='tab-pane-projects'>
                                         <ProjectCard {...projects[1]} />
                                 </Tab.Pane>
+                                {/* make a new tab.pane with the project number and go to css */}
                             </Tab.Content>
                         </Tab.Container>
                     </Col>
