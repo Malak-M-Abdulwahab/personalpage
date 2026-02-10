@@ -38,7 +38,7 @@ function Skills(){
                     <div className='skill-bx'>
                         <h2>Skills</h2>
                         <p>Striving to achieve perfection in every aspect</p>
-                        <Carousel responsive={responsive} infinite={true} className='skill-slider'>
+                        <Carousel responsive={responsive} infinite={true} className='skill-slider' style={window.screen.width >= 768 ? {width: "80%"} : {width: "100%"}}>
                         <div className='item'>
                             <img src={per95} alt='95 percent'></img>
                             <h5>HTML</h5>

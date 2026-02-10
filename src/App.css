@@ -219,7 +219,6 @@ span.navbar-text {
 .skill {
   padding: 50px;
   position: relative;
-  height: 100vh;
 }
 
 .skill-bx {
@@ -247,7 +246,6 @@ span.navbar-text {
 }
 
 .skill-slider {
-  width: 80%;
   margin: 0 auto;
   position: relative;
 }
@@ -255,14 +253,6 @@ span.navbar-text {
 .skill-slider .item img {
   width: 50%;
   margin: 0 auto 15px auto;
-}
-
-.background-image-left {
-  top: 28%;
-  position: absolute;
-  bottom: 0;
-  width: 40%;
-  z-index: -4;
 }
 
 /* --------------------END SKILLS---------------------- */
@@ -415,11 +405,9 @@ span.navbar-text {
 /* ---------------------ABOUT ME----------------------- */
 
 .aboutme{
-  width: 60%;
   margin: auto;
   background-color: white;
   border-radius: 25px;
-  padding: 30px 80px;
   box-shadow: 0 0 5px 5px rgba(225, 196, 207, 0.377);
 }
 

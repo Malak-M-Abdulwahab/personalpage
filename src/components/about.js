@@ -5,7 +5,7 @@ import me from '../images/meBanner.png'
 
 function About(){
     return (
-        <section className='aboutme' id='aboutme'>
+        <section className='aboutme' id='aboutme' style={window.screen.width >= 768 ? {width: "60%", padding: "30px 80px"} : {width: "90%", padding: "20px 30px"}}>
             <Container>
                 <Row>
                     <Col>
