@@ -42,13 +42,13 @@ function Home(){
         <section className="banner" id="home">
             <Container fluid>
                 <Row className="align-items-center">
-                    <Col xs = {12} md = {6} xl = {1}>
+                    <Col xs = {1} md = {1} xl = {1}>
                         <img className="flower1" src={bannerFlower1} alt="Flower 1"></img>
                         <img className="flower2" src={bannerFlower2} alt="Flower 2"></img>
                     </Col>
-                    <Col xs = {12} md = {0} xl = {1}>
+                    <Col xs = {1} md = {1} xl = {1}>
                     </Col>
-                    <Col xs = {12} md = {6} xl = {8}>
+                    <Col xs = {8} md = {8} xl = {8}>
                         <h1>{"Hi! I'm Malak Moustafa, "}</h1>
                         <span className="wrap">{text}</span>
                         <p>Passionate about creating beautiful and productive platforms</p>

@@ -41,7 +41,7 @@ function NavigationBar() {
                     <Nav.Link href="#contactme" className={activeLink === "contactme" ? "active navbar-link" : "navbar-link"} onClick={() => updateActiveLink("contactme")}>Contact Me</Nav.Link>
                 </Nav>
                 <span className="navbar-text">
-                    <div className="social-icon">
+                    <div className="social-icon" style={window.screen.width >= 992 ? {opacity: 1} : {opacity: 0}}>
                         <a href="https://github.com/Malak-M-Abdulwahab"><img src={github} alt='GitHub' className='socialLogo'></img></a>
                         <a href="www.linkedin.com/in/malak-m-abdelwahab"><img src={linkedin} alt='LinkedIn' className='socialLogo'></img></a>
                         <a href="https://www.instagram.com/malakk_loki/"><img src={instagram} alt='Instagram' className='socialLogo'></img></a>
