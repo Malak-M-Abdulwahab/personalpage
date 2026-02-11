@@ -7,7 +7,6 @@ import About from './components/about';
 import Contact from './components/contact';
 import Footer from './components/footer';
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Test } from './components/test';
 
 function App() {
   return (
@@ -19,7 +18,6 @@ function App() {
       <About />
       <Contact />
       <Footer />
-      <Test />
     </div>
   );
 }
