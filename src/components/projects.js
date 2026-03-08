@@ -3,12 +3,19 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import proj1 from "../images/proj1.png"
 import proj2 from "../images/proj2.png"
+import proj3 from "../images/proj3.png"
 import Nav from 'react-bootstrap/Nav';
 import Tab from 'react-bootstrap/Tab';
 import ProjectCard from "./projectCard";
 
 function Projects(){
     const projects = [
+        {
+            title: "Weather API",
+            description: "Implementing node.js capabilities and deployment",
+            imgURL: proj3,
+            siteURL: "https://weathergeocodeapi.netlify.app/"
+        },
         {
             title: "Perfume homepage",
             description: "Introductory page describing a perfume store",
@@ -39,6 +46,9 @@ function Projects(){
                                 <Nav.Item>
                                     <Nav.Link eventKey="second">Tab 2</Nav.Link>
                                 </Nav.Item>
+                                <Nav.Item>
+                                    <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                                </Nav.Item>
                             </Nav>
                             <Tab.Content>
                                 <Tab.Pane eventKey="first" className='tab-pane-projects'>
@@ -48,6 +58,9 @@ function Projects(){
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="second" className='tab-pane-projects'>
                                         <ProjectCard {...projects[1]} />
+                                </Tab.Pane>
+                                <Tab.Pane eventKey="third" className='tab-pane-projects'>
+                                        <ProjectCard {...projects[2]} />
                                 </Tab.Pane>
                                 {/* make a new tab.pane with the project number and go to css */}
                             </Tab.Content>
