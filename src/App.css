@@ -291,7 +291,7 @@ span.navbar-text {
 }
 
 .project .nav.nav-pills .nav-item {
-  width: 50%;
+  width: 33.333%;
   /* adjust width according to the number of projects */
 }
 
